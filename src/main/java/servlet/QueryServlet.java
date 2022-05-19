@@ -21,7 +21,7 @@ public class QueryServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("hot-fix");
         request.setCharacterEncoding("utf-8");
-        System.out.println("test");
+        System.out.println("test hot-fix");
         String ids = request.getParameter("id");
         int id = Integer.parseInt(ids);
         String sql = "delete from user where id = ?";
