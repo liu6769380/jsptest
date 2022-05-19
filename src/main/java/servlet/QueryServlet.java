@@ -20,7 +20,7 @@ public class QueryServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-        System.out.println("test2");
+        System.out.println("test4");
         String ids = request.getParameter("id");
         int id = Integer.parseInt(ids);
         String sql = "delete from user where id = ?";
