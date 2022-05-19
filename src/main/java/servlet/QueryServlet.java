@@ -22,6 +22,7 @@ public class QueryServlet extends HttpServlet {
         System.out.println("hot-fix");
         request.setCharacterEncoding("utf-8");
         System.out.println("test master");
+        System.out.println("test hot-fix");
         String ids = request.getParameter("id");
         int id = Integer.parseInt(ids);
         String sql = "delete from user where id = ?";
